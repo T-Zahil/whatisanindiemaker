@@ -18,6 +18,7 @@
   "dependencies": {
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/pwa": "^3.3.5",
+    "@splitbee/web": "^0.3.0",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",

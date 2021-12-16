@@ -1521,6 +1521,11 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
+"@splitbee/web@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@splitbee/web/-/web-0.3.0.tgz#676ebe877b6d82a10ece6527a07f70b1994d242e"
+  integrity sha512-jNPDKg0GQGa4jCaBc6JQsv0NHmBA80WCwZE49nFyhcbo32WF0GyqXeice7ZApy7OUHI16bAUAzm4MOQw3gvxfQ==
+
 "@types/anymatch@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/anymatch/-/anymatch-3.0.0.tgz#c95ff14401dbb2869913afac3935af4ad0d37f1a"

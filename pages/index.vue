@@ -136,9 +136,14 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import splitbee from '@splitbee/web'
 
 export default Vue.extend({
-  name: 'IndexPage'
+  name: 'IndexPage',
+
+  mounted () {
+    splitbee.init()
+  }
 })
 
 </script>
