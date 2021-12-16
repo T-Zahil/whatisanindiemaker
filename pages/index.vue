@@ -36,7 +36,7 @@
       <h3 class="mb-8 text-xl font-semibold text-left md:text-2xl text-amber-800">
         What does an indie maker do?
       </h3>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
         <div class="flex flex-col p-10 text-xl text-yellow-800 bg-yellow-200 border-4 border-yellow-800 rounded-lg border-opacity-30">
           <div class="flex items-center mb-5">
             <span class="flex items-center justify-center p-2 mr-4 bg-yellow-300 rounded-full">
