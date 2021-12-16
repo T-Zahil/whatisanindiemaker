@@ -8,14 +8,12 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
-    "lint:prettier": "prettier --check .",
-    "lint": "yarn lint:js && yarn lint:prettier",
-    "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
+    "lint": "yarn lint:js",
+    "lintfix": "yarn lint:js --fix",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,ts,vue}": "eslint --cache",
-    "*.**": "prettier --check --ignore-unknown"
+    "*.{js,ts,vue}": "eslint --cache"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
@@ -28,19 +26,18 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.16.3",
+    "@babel/eslint-parser": "^7.5.4",
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^8.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/tailwindcss": "^4.2.1",
+    "babel-eslint": "^10.1.0",
     "eslint": "^8.4.1",
-    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
-    "postcss": "^8.4.4",
-    "prettier": "^2.5.1"
+    "postcss": "^8.4.4"
   }
 }
