@@ -9,11 +9,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'You know an indie maker but you don\'t understand what he does? We explain it all to you!' },
+      { hid: 'description', name: 'description', content: 'You know an indie maker but you don\'t understand what they do? We explain it all to you!' },
       { name: 'format-detection', content: 'telephone=no' },
       { hid: 'og-title', property: 'og:title', content: 'What is an Indie Maker?' },
       { hid: 'og-type', property: 'og:type', content: 'website' },
-      { hid: 'og-description', property: 'og:description', content: 'You know an indie maker but you don\'t understand what he does? We explain it all to you!' },
+      { hid: 'og-description', property: 'og:description', content: 'You know an indie maker but you don\'t understand what they do? We explain it all to you!' },
       { hid: 'og-image', property: 'og:image', content: 'https://whatisanindiemaker.com/og.jpg' },
       { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' }
     ],

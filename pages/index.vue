@@ -5,7 +5,7 @@
         What is an Indie Maker?
       </h1>
       <h2 class="text-2xl font-medium text-gray-700 md:text-3xl">
-        An indie maker is an <span class="underline">independent creator</span>. He builds projects with his own resources, often without funding, taking care of all aspects: development, design, marketing...
+        An indie maker is an <span class="underline">independent creator</span>. They build projects with their own resources, often without funding, taking care of all aspects: development, design, marketing...
       </h2>
     </section>
 
@@ -47,7 +47,7 @@
             </h4>
           </div>
           <p>
-            Without necessarily being an expert in development, an indie maker very often develops his own projects.
+            Without necessarily being an expert in development, an indie maker very often develop their own projects.
           </p>
         </div>
 
@@ -61,7 +61,7 @@
             </h4>
           </div>
           <p>
-            Without necessarily being an expert in design, an indie maker very often design his own projects.
+            Without necessarily being an expert in design, an indie maker very often design their own projects.
           </p>
         </div>
 
@@ -75,7 +75,7 @@
             </h4>
           </div>
           <p>
-            Marketing is a very important part of his work: to sell your projects, he have to make them known!
+            Marketing is a very important part of their work: to sell your projects, they have to make them known!
           </p>
         </div>
 
@@ -89,7 +89,7 @@
             </h4>
           </div>
           <p>
-            An indie maker can very well use no-code tools, CMS, templates... The more time he saves the better.
+            An indie maker can very well use no-code tools, CMS, templates... The more time they saves the better.
           </p>
         </div>
 
@@ -126,7 +126,7 @@
             </h4>
           </div>
           <p>
-            To make his projects stand out on search engines, it is also him who takes care of it!
+            To make their projects stand out on search engines, it is also them who takes care of it!
           </p>
         </div>
       </div>
