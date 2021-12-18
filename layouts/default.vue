@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen w-full min-w-[100vw] bg-orange-100">
+  <div class="w-full min-h-screen overflow-hidden bg-orange-100 max-w-screen">
     <Nuxt />
   </div>
 </template>
