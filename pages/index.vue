@@ -147,6 +147,8 @@
         </div>
       </div>
     </section>
+
+    <a target="_blank" rel="noopener" href="https://thomas-sanlis.com/" class="fixed bottom-0 right-0 z-50 flex items-center p-2 text-sm bg-white rounded-t-md"><img src="https://thomas-sanlis.com/icon.png" class="w-6 mr-4"> <p>by Thomas Sanlis</p></a>
   </div>
 </template>
 
