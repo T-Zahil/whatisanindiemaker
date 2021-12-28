@@ -174,7 +174,7 @@
             MRR
           </h4>
           <p>
-            Monthly Recurring Revenu. What an indie maker earns each month in recurring revenue.
+            Monthly Recurring Revenue. What an indie maker earns each month in recurring revenue.
           </p>
         </div>
         <div class="flex flex-col p-10 text-xl text-pink-200 bg-gray-800 rounded-lg">
