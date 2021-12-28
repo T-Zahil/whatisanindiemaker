@@ -164,6 +164,30 @@
       </div>
     </section>
 
+    <section class="w-full">
+      <h3 class="mb-8 text-xl font-semibold text-left md:text-2xl text-amber-800">
+        Some vocabulary
+      </h3>
+      <div class="space-y-4">
+        <div class="flex flex-col p-10 text-xl text-yellow-200 bg-gray-800 rounded-lg">
+          <h4 class="font-bold underline">
+            MRR
+          </h4>
+          <p>
+            Monthly Recurring Revenu. What an indie maker earns each month in recurring revenue.
+          </p>
+        </div>
+        <div class="flex flex-col p-10 text-xl text-pink-200 bg-gray-800 rounded-lg">
+          <h4 class="font-bold underline">
+            Ramen profitability
+          </h4>
+          <p>
+            Earning just enough to live on.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <a target="_blank" rel="noopener" href="https://thomas-sanlis.com/" class="fixed bottom-0 right-0 z-50 flex items-center p-2 text-sm bg-white rounded-t-md"><img src="https://thomas-sanlis.com/icon.png" class="w-6 mr-4"> <p>by Thomas Sanlis</p></a>
   </div>
 </template>
