@@ -185,6 +185,14 @@
             Earning just enough to live on.
           </p>
         </div>
+        <div class="flex flex-col p-10 text-xl bg-gray-800 rounded-lg text-emerald-200">
+          <h4 class="font-bold underline">
+            SAAS
+          </h4>
+          <p>
+            Software As A Service. It is therefore online software, often sold with a subscription. For an indie maker, it's the dream because it allows to have recurring revenues.
+          </p>
+        </div>
       </div>
     </section>
 
