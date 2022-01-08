@@ -54,8 +54,12 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    icon: {
+      fileName: 'icon.png'
+    },
     manifest: {
-      lang: 'en'
+      lang: 'en',
+      name: 'What is an Indie Maker'
     }
   },
 
