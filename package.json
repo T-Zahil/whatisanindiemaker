@@ -38,7 +38,6 @@
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.1.5",
     "postcss": "^8.4.4",
     "typescript-eslint": "^0.0.1-alpha.0",
     "lint-staged": "^12.1.7"
