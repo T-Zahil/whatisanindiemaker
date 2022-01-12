@@ -58,11 +58,12 @@ export default {
   },
 
   pwa: {
-    manifest: {
-      lang: 'en'
-    },
     icon: {
       fileName: 'icon.png'
+    },
+    manifest: {
+      lang: 'en',
+      name: 'What is an Indie Maker'
     }
   },
 
