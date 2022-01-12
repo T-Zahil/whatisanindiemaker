@@ -1,9 +1,11 @@
+import frMessages from './locales/fr.js'
+import enMessages from './locales/en.js'
+
 export default {
   ssr: true,
 
   target: 'static',
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'What is an Indie Maker?',
     meta: [
@@ -27,41 +29,42 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss'
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxtjs/i18n'
   ],
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'en'
+  i18n: {
+    locales: ['en', 'fr'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: enMessages,
+        fr: frMessages
+      }
     }
   },
 
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  pwa: {
+    manifest: {
+      lang: 'en'
+    },
+    icon: {
+      fileName: 'icon.png'
+    }
+  },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
 }

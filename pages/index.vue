@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center justify-center max-w-4xl px-4 py-12 mx-auto space-y-24 bg-orange-100 md:py-24">
-    <div class="flex items-center space-x-6 md:fixed top-4 right-4">
+    <div class="flex flex-wrap items-center justify-center space-x-6 space-y-4 sm:space-y-0 md:fixed top-4 right-4 sm:justify-start">
       <a href="https://github.com/T-Zahil/whatisanindiemaker" rel="noopener" target="_none" class="cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -17,11 +17,13 @@
         </svg>
       </a>
 
-      <a href="https://www.buymeacoffee.com/tzahil" rel="noopener" target="_none" class="flex items-center px-4 py-2 space-x-3 font-semibold text-amber-800 rounded-lg bg-[#fdde02]">
+      <base-select :value="currentLocale" :options="availableLocales" translate-key="languages" @input="$i18n.setLocale($event)" />
+
+      <a href="https://www.buymeacoffee.com/tzahil" rel="noopener" target="_none" class="flex items-center px-4 py-2 space-x-3 text-amber-800 rounded-lg bg-[#fdde02]">
         <svg
           class="mr-3"
-          width="20px"
-          height="28px"
+          width="11px"
+          height="15px"
           viewBox="0 0 884 1279"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -32,41 +34,53 @@
       </a>
     </div>
 
+    <!-- Hero -->
     <section class="flex flex-col items-center text-center">
       <h1 class="mb-4 text-5xl font-extrabold md:text-6xl text-amber-800">
-        What is an Indie Maker?
+        {{ $t('hero.title') }}
       </h1>
-      <h2 class="text-2xl font-medium text-gray-700 md:text-3xl">
-        An indie maker is an <span class="underline">independent creator</span>. They build projects with their own resources, often without funding, taking care of all aspects: development, design, marketing...
-      </h2>
+      <i18n path="hero.subtitle" tag="h2" class="text-2xl font-medium text-gray-700 md:text-3xl">
+        <template #span>
+          <span class="underline">{{ $t('hero.independantCreator') }}</span>
+        </template>
+      </i18n>
     </section>
+    <!-- End Hero -->
 
+    <!-- Msg -->
     <section class="flex flex-col items-center text-center">
       <div class="px-10 py-4 transition transform bg-orange-200 border-4 rounded-lg shadow ease hover:rotate-6 border-amber-700 border-opacity-30">
         <h2 class="text-xl font-medium leading-8 text-center text-amber-800">
-          If you want to understand this profession better, take 5 minutes to read on!
+          {{ $t('msg.title') }}
         </h2>
       </div>
     </section>
+    <!-- End Msg -->
 
+    <!-- Why -->
     <section>
       <h3 class="mb-2 text-xl font-semibold md:text-2xl text-amber-800">
-        Why?
+        {{ $t('why.title') }}
       </h3>
       <p class="mb-4 text-lg">
-        Because it is a new profession, which many people do not know yet. Like many freelance jobs, it can lead to feelings of isolation, which are compounded if loved ones don't understand what you do.
-      </p><p class="mb-4 text-lg">
-        In addition to working in a relatively new and technical environment (internet!!), indie makers have several jobs at the same time: developer, designer, marketer, writer, social media manager...
-      </p><p class="mb-4 text-lg">
-        And the hardest thing for relatives to understand is that many of them don't make a living that way! And those who are lucky enough have spent months or years learning and building projects.
-      </p><p class="mb-4 text-lg">
-        This website aims to promote the indie maker profession by explaining it to the general public. Just by reading these few lines, you are already doing a great service to the thousands of indie makers who strive every day to create the best services on the Internet.
+        {{ $t('why.content.0') }}
+      </p>
+      <p class="mb-4 text-lg">
+        {{ $t('why.content.1') }}
+      </p>
+      <p class="mb-4 text-lg">
+        {{ $t('why.content.2') }}
+      </p>
+      <p class="mb-4 text-lg">
+        {{ $t('why.content.3') }}
       </p>
     </section>
+    <!-- End Why -->
 
+    <!-- Roles -->
     <section>
       <h3 class="mb-8 text-xl font-semibold text-left md:text-2xl text-amber-800">
-        What does an indie maker do?
+        {{ $t('roles.title') }}
       </h3>
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
         <div class="flex flex-col p-10 text-xl text-yellow-800 bg-yellow-200 border-4 border-yellow-800 rounded-lg border-opacity-30">
@@ -75,11 +89,11 @@
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" /></svg>
             </span>
             <h4 class="font-bold">
-              Development
+              {{ $t('roles.developmentTitle') }}
             </h4>
           </div>
           <p>
-            Without necessarily being an expert in development, an indie maker very often develop their own projects.
+            {{ $t('roles.developmentContent') }}
           </p>
         </div>
 
@@ -89,11 +103,11 @@
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg>
             </span>
             <h4 class="font-bold">
-              Design
+              {{ $t('roles.designTitle') }}
             </h4>
           </div>
           <p>
-            Without necessarily being an expert in design, an indie maker very often design their own projects.
+            {{ $t('roles.designContent') }}
           </p>
         </div>
 
@@ -103,11 +117,11 @@
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             </span>
             <h4 class="font-bold">
-              Marketing
+              {{ $t('roles.marketingTitle') }}
             </h4>
           </div>
           <p>
-            Marketing is a very important part of their work: to sell your projects, they have to make them known!
+            {{ $t('roles.marketingContent') }}
           </p>
         </div>
 
@@ -117,11 +131,11 @@
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
             </span>
             <h4 class="font-bold">
-              Do everything himself
+              {{ $t('roles.himselfTitle') }}
             </h4>
           </div>
           <p>
-            An indie maker can very well use no-code tools, CMS, templates... The more time they saves the better.
+            {{ $t('roles.himselfContent') }}
           </p>
         </div>
 
@@ -140,11 +154,11 @@
               ><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg>
             </span>
             <h4 class="font-bold">
-              Social media
+              {{ $t('roles.smTitle') }}
             </h4>
           </div>
           <p>
-            Twitter is the best known, but it can use all of them: youtube, reddit, instagram...
+            {{ $t('roles.smContent') }}
           </p>
         </div>
 
@@ -154,43 +168,44 @@
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
             </span>
             <h4 class="font-bold">
-              SEO
+              {{ $t('roles.seoTitle') }}
             </h4>
           </div>
           <p>
-            To make their projects stand out on search engines, it is also them who takes care of it!
+            {{ $t('roles.seoContent') }}
           </p>
         </div>
       </div>
     </section>
+    <!-- End Roles -->
 
     <section class="w-full">
       <h3 class="mb-8 text-xl font-semibold text-left md:text-2xl text-amber-800">
-        Some vocabulary
+        {{ $t('vocabulary.title') }}
       </h3>
       <div class="space-y-4">
         <div class="flex flex-col p-10 text-xl text-yellow-200 bg-gray-800 rounded-lg">
           <h4 class="font-bold underline">
-            MRR
+            {{ $t('vocabulary.mrr') }}
           </h4>
           <p>
-            Monthly Recurring Revenue. What an indie maker earns each month in recurring revenue.
+            {{ $t('vocabulary.mrrDef') }}
           </p>
         </div>
         <div class="flex flex-col p-10 text-xl text-pink-200 bg-gray-800 rounded-lg">
           <h4 class="font-bold underline">
-            Ramen profitability
+            {{ $t('vocabulary.ramenProfitability') }}
           </h4>
           <p>
-            Earning just enough to live on.
+            {{ $t('vocabulary.ramenProfitabilityDef') }}
           </p>
         </div>
         <div class="flex flex-col p-10 text-xl bg-gray-800 rounded-lg text-emerald-200">
           <h4 class="font-bold underline">
-            SAAS
+            {{ $t('vocabulary.saas') }}
           </h4>
           <p>
-            Software As A Service. It is therefore online software, often sold with a subscription. For an indie maker, it's the dream because it allows to have recurring revenues.
+            {{ $t('vocabulary.saasDef') }}
           </p>
         </div>
       </div>
@@ -206,6 +221,30 @@ import splitbee from '@splitbee/web'
 
 export default Vue.extend({
   name: 'IndexPage',
+
+  data () {
+    return {
+      languages: [
+        {
+          name: 'English',
+          code: 'en'
+        },
+        {
+          name: 'Français',
+          code: 'fr'
+        }
+      ]
+    }
+  },
+
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales
+    },
+    currentLocale () {
+      return this.$i18n.locale
+    }
+  },
 
   mounted () {
     splitbee.init()

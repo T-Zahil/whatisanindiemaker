@@ -5,14 +5,15 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    parser: '@babel/eslint-parser',
+    parser: '@typescript-eslint/parser',
+    ecmaVersion: 6,
     requireConfigFile: false
   },
   extends: [
     '@nuxtjs/eslint-config-typescript',
     'plugin:nuxt/recommended'
   ],
-  plugins: [],
+  plugins: ['@typescript-eslint'],
   // add your custom rules here
   rules: {}
 }
