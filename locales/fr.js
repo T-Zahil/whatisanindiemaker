@@ -37,12 +37,18 @@ export default {
 
   vocabulary: {
     title: 'Un peu de vocabulaire',
-    mrr: 'MRR',
-    mrrDef: "Monthly Recurring Revenue. Ce qu'un Indie Maker gagne chaque mois en revenus récurrents.",
+    mrr: 'MRR / ARR',
+    mrrDef: "Monthly / Annual Recurring Revenue. Ce qu'un Indie Maker gagne chaque mois / année en revenus récurrents.",
     ramenProfitability: 'Ramen profitability',
     ramenProfitabilityDef: 'Gagner juste assez pour vivre.',
     saas: 'SAAS',
-    saasDef: "Software As A Service. Il s'agit donc d'un logiciel en ligne, souvent vendu avec un abonnement. Pour un Indie Maker, c'est le rêve car cela permet d'avoir des revenus récurrents."
+    saasDef: "Software As A Service. Il s'agit donc d'un logiciel en ligne, souvent vendu avec un abonnement. Pour un Indie Maker, c'est le rêve car cela permet d'avoir des revenus récurrents.",
+    churn: 'Churn',
+    churnDef: 'Le nombre de personnes qui se désabonnent de votre projet.',
+    mvp: 'MVP',
+    mvpDef: 'Minimum Viable Product. La version la plus minimaliste de votre produit.',
+    kpi: 'KPI',
+    kpiDef: 'Key Performance Indicator. Des indicateurs chiffrés qui permettent de mesurer une performance. Ex: le nombre de visites quotidiennes.'
   },
 
   languages: {

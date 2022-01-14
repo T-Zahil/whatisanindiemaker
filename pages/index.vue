@@ -183,8 +183,8 @@
       <h3 class="mb-8 text-xl font-semibold text-left md:text-2xl text-amber-800">
         {{ $t('vocabulary.title') }}
       </h3>
-      <div class="space-y-4">
-        <div class="flex flex-col p-10 text-xl text-yellow-200 bg-gray-800 rounded-lg">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex flex-col col-span-1 p-10 text-xl text-yellow-200 bg-gray-800 rounded-lg">
           <h4 class="font-bold underline">
             {{ $t('vocabulary.mrr') }}
           </h4>
@@ -192,7 +192,7 @@
             {{ $t('vocabulary.mrrDef') }}
           </p>
         </div>
-        <div class="flex flex-col p-10 text-xl text-pink-200 bg-gray-800 rounded-lg">
+        <div class="flex flex-col col-span-1 p-10 text-xl text-pink-200 bg-gray-800 rounded-lg">
           <h4 class="font-bold underline">
             {{ $t('vocabulary.ramenProfitability') }}
           </h4>
@@ -200,12 +200,36 @@
             {{ $t('vocabulary.ramenProfitabilityDef') }}
           </p>
         </div>
-        <div class="flex flex-col p-10 text-xl bg-gray-800 rounded-lg text-emerald-200">
+        <div class="flex flex-col col-span-1 p-10 text-xl bg-gray-800 rounded-lg text-emerald-200">
           <h4 class="font-bold underline">
             {{ $t('vocabulary.saas') }}
           </h4>
           <p>
             {{ $t('vocabulary.saasDef') }}
+          </p>
+        </div>
+        <div class="flex flex-col col-span-1 p-10 text-xl text-indigo-200 bg-gray-800 rounded-lg">
+          <h4 class="font-bold underline">
+            {{ $t('vocabulary.churn') }}
+          </h4>
+          <p>
+            {{ $t('vocabulary.churnDef') }}
+          </p>
+        </div>
+        <div class="flex flex-col col-span-1 p-10 text-xl text-red-200 bg-gray-800 rounded-lg">
+          <h4 class="font-bold underline">
+            {{ $t('vocabulary.mvp') }}
+          </h4>
+          <p>
+            {{ $t('vocabulary.mvpDef') }}
+          </p>
+        </div>
+        <div class="flex flex-col col-span-1 p-10 text-xl bg-gray-800 rounded-lg text-amber-200">
+          <h4 class="font-bold underline">
+            {{ $t('vocabulary.kpi') }}
+          </h4>
+          <p>
+            {{ $t('vocabulary.kpiDef') }}
           </p>
         </div>
       </div>
