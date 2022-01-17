@@ -53,6 +53,7 @@ export default {
 
   languages: {
     fr: 'Français',
-    en: 'English'
+    en: 'English',
+    ru: 'Русский'
   }
 }
