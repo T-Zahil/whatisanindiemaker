@@ -54,6 +54,7 @@ export default {
   languages: {
     fr: 'Français',
     en: 'English',
-    ru: 'Русский'
+    ru: 'Русский',
+    'pt-br': 'Portuguese'
   }
 }

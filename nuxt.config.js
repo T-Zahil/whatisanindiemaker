@@ -1,6 +1,7 @@
 import frMessages from './locales/fr.js'
 import enMessages from './locales/en.js'
 import ruMessages from './locales/ru.js'
+import ptBrMessages from './locales/pt-br.js'
 
 export default {
   ssr: true,
@@ -47,14 +48,15 @@ export default {
   ],
 
   i18n: {
-    locales: ['en', 'fr', 'ru'],
+    locales: ['en', 'fr', 'ru', 'pt-br'],
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
       messages: {
         en: enMessages,
         fr: frMessages,
-        ru: ruMessages
+        ru: ruMessages,
+        'pt-br': ptBrMessages
       }
     }
   },
