@@ -12,9 +12,9 @@ export default {
   why: {
     title: 'Por quê?',
     content: [
-      'Porque é uma profissão nova, que muita gente ainda não conhece. Como muitos trabalhos freelance, pode se sentir um pouco em isolamento, que agravada se as pessoas à volta não entenderem o que você faz.',
+      'É uma profissão nova que muita gente ainda não conhece. Como muitos trabalhos freelance, pode sentir um pouco em isolamento, que agrava se as pessoas ao redor não entenderem o que você faz.',
       'Além de trabalhar em um ambiente relativamente novo e técnico (Internet!!), os Indie Makers têm vários empregos ao mesmo tempo: desenvolvedor, designer, marketing, redator, gerente de mídia social...',
-      'E o mais difícil pra alguns parentes entenderem é que muitos deles não ganham a vida assim! E os sortudos passaram meses ou anos aprendendo e construindo projetos.',
+      'E o mais difícil pra alguns parentes entenderem é que muitos deles não ganham a vida assim! E os ditos "sortudos" já passaram meses ou anos aprendendo e construindo projetos.',
       'Este site tem como objetivo promover a profissão Indie Maker, explicando ao público em geral. Apenas lendo estas poucas linhas, você já está prestando um grande serviço aos milhares de Indie Makers que se esforçam todos os dias para criar os melhores serviços na Internet.'
     ]
   },
