@@ -13,7 +13,7 @@
         v-for="(option, index) in options"
         :key="index"
         :selected="selected === option ? 'selected' : null"
-        :value="option"
+        :value="optionsLabel ? option.value : option"
       >
         {{ displayOption(option) }}
       </option>
@@ -34,7 +34,6 @@ export default Vue.extend({
     label: String,
     options: Array,
     optionsLabel: String,
-    translateKey: String,
     required: Boolean
   },
 
@@ -64,7 +63,7 @@ export default Vue.extend({
 
   methods: {
     displayOption (option: Record<string, any>) {
-      return option ? (this.translateKey ? this.$t(`${this.translateKey}.${option}`) : option) : ''
+      return option ? (this.optionsLabel ? option[this.optionsLabel] : option) : ''
     }
   }
 })

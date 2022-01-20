@@ -17,7 +17,7 @@
         </svg>
       </a>
 
-      <base-select :value="currentLocale" :options="availableLocales" translate-key="languages" @input="$i18n.setLocale($event)" />
+      <base-select :value="currentLocale" :options="availableLocales" options-label="name" @input="$i18n.setLocale($event)" />
 
       <a href="https://www.buymeacoffee.com/tzahil" rel="noopener" target="_none" class="flex items-center px-4 py-2 space-x-3 text-amber-800 rounded-lg bg-[#fdde02]">
         <svg
@@ -246,24 +246,17 @@ import splitbee from '@splitbee/web'
 export default Vue.extend({
   name: 'IndexPage',
 
-  data () {
-    return {
-      languages: [
-        {
-          name: 'English',
-          code: 'en'
-        },
-        {
-          name: 'Français',
-          code: 'fr'
-        }
-      ]
-    }
-  },
-
   computed: {
     availableLocales () {
-      return this.$i18n.locales
+      const locales = [] as Record<string, any>
+
+      this.$i18n.locales.forEach((lang: any) => {
+        locales.push({
+          value: lang,
+          name: require(`~/locales/${lang}`).default.languageName
+        })
+      })
+      return locales
     },
     currentLocale () {
       return this.$i18n.locale

@@ -1,7 +1,10 @@
-import frMessages from './locales/fr.js'
-import enMessages from './locales/en.js'
-import ruMessages from './locales/ru.js'
-import ptBrMessages from './locales/pt-br.js'
+import languages from './locales'
+
+const messages = {}
+
+languages.forEach((lang) => {
+  messages[lang] = require(`./locales/${lang}`).default
+})
 
 export default {
   ssr: true,
@@ -52,12 +55,7 @@ export default {
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
-      messages: {
-        en: enMessages,
-        fr: frMessages,
-        ru: ruMessages,
-        'pt-br': ptBrMessages
-      }
+      messages
     }
   },
 

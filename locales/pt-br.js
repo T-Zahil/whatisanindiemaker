@@ -1,4 +1,6 @@
 export default {
+  languageName: 'Português',
+
   hero: {
     title: 'O que é um Indie Maker?',
     subtitle: 'Indie Maker é um {span}. Eles constroem projetos com recursos próprios, muitas vezes sem investimento, cuidando de todas as áreas: desenvolvimento, design, marketing...',
@@ -49,12 +51,5 @@ export default {
     mvpDef: 'Produto minimamente viável (Minimum Viable Product). A versão mais minimalista do seu produto.',
     kpi: 'KPI',
     kpiDef: 'Indicador-Chave de Desempenho (Key Performance Indicator). Indicadores numéricos que permitem medir um desempenho. Ex: número de visitas diárias.'
-  },
-
-  languages: {
-    fr: 'Français',
-    en: 'English',
-    ru: 'Русский',
-    'pt-br': 'Portuguese'
   }
 }

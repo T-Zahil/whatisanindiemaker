@@ -1,4 +1,6 @@
 export default {
+  languageName: 'English',
+
   hero: {
     title: 'What is an Indie Maker?',
     subtitle: 'An indie maker is an {span}. They build projects with their own resources, often without funding, taking care of all aspects: development, design, marketing...',
@@ -49,12 +51,5 @@ export default {
     mvpDef: 'Minimum Viable Product. The most minimalist version of your product.',
     kpi: 'KPI',
     kpiDef: 'Key Performance Indicator. Numerical indicators that allow to measure a performance. Ex: number of daily visits.'
-  },
-
-  languages: {
-    fr: 'Français',
-    en: 'English',
-    ru: 'Русский',
-    'pt-br': 'Portuguese'
   }
 }
