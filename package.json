@@ -40,6 +40,6 @@
     "husky": "^7.0.4",
     "postcss": "^8.4.12",
     "typescript-eslint": "^0.0.1-alpha.0",
-    "lint-staged": "^12.3.5"
+    "lint-staged": "^12.3.6"
   }
 }
