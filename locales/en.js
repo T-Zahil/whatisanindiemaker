@@ -4,11 +4,11 @@ export default {
   hero: {
     title: 'What is an Indie Maker?',
     subtitle: 'An indie maker is an {span}. They build projects with their own resources, often without funding, taking care of all aspects: development, design, marketing...',
-    independantCreator: 'independent creator'
+    independantCreator: 'independent creator',
   },
 
   msg: {
-    title: 'If you want to understand this profession better, take 5 minutes to read on!'
+    title: 'If you want to understand this profession better, take 5 minutes to read on!',
   },
 
   why: {
@@ -17,8 +17,8 @@ export default {
       "Because it is a new profession, which many people do not know yet. Like many freelance jobs, it can lead to feelings of isolation, which are compounded if loved ones don't understand what you do.",
       'In addition to working in a relatively new and technical environment (internet!!), indie makers have several jobs at the same time: developer, designer, marketer, writer, social media manager...',
       "And the hardest thing for relatives to understand is that many of them don't make a living that way! And those who are lucky enough have spent months or years learning and building projects.",
-      'This website aims to promote the indie maker profession by explaining it to the general public. Just by reading these few lines, you are already doing a great service to the thousands of indie makers who strive every day to create the best services on the Internet.'
-    ]
+      'This website aims to promote the indie maker profession by explaining it to the general public. Just by reading these few lines, you are already doing a great service to the thousands of indie makers who strive every day to create the best services on the Internet.',
+    ],
   },
 
   roles: {
@@ -34,7 +34,7 @@ export default {
     smTitle: 'Social media',
     smContent: 'Twitter is the best known, but they can use all of them: youtube, reddit, instagram...',
     seoTitle: 'SEO',
-    seoContent: 'They have to make their projects stand out on search engines themselves!'
+    seoContent: 'They have to make their projects stand out on search engines themselves!',
   },
 
   vocabulary: {
@@ -50,6 +50,10 @@ export default {
     mvp: 'MVP',
     mvpDef: 'Minimum Viable Product. The most minimalist version of your product.',
     kpi: 'KPI',
-    kpiDef: 'Key Performance Indicator. Numerical indicators that allow to measure a performance. Ex: number of daily visits.'
-  }
+    kpiDef: 'Key Performance Indicator. Numerical indicators that allow to measure a performance. Ex: number of daily visits.',
+  },
+
+  contributors: {
+    title: 'Contributors',
+  },
 }

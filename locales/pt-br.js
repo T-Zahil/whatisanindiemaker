@@ -4,11 +4,11 @@ export default {
   hero: {
     title: 'O que é um Indie Maker?',
     subtitle: 'Indie Maker é um {span}. Eles constroem projetos com recursos próprios, muitas vezes sem investimento, cuidando de todas as áreas: desenvolvimento, design, marketing...',
-    independantCreator: 'criador independente'
+    independantCreator: 'criador independente',
   },
 
   msg: {
-    title: 'Se você quer entender melhor esta profissão, separa 5 minutos aqui!'
+    title: 'Se você quer entender melhor esta profissão, separa 5 minutos aqui!',
   },
 
   why: {
@@ -17,8 +17,8 @@ export default {
       'É uma profissão nova que muita gente ainda não conhece. Como muitos trabalhos freelance, pode sentir um pouco em isolamento, que agrava se as pessoas ao redor não entenderem o que você faz.',
       'Além de trabalhar em um ambiente relativamente novo e técnico (Internet!!), os Indie Makers têm vários empregos ao mesmo tempo: desenvolvedor, designer, marketing, redator, gerente de mídia social...',
       'E o mais difícil pra alguns parentes entenderem é que muitos deles não ganham a vida assim! E os ditos "sortudos" já passaram meses ou anos aprendendo e construindo projetos.',
-      'Este site tem como objetivo promover a profissão Indie Maker, explicando ao público em geral. Apenas lendo estas poucas linhas, você já está prestando um grande serviço aos milhares de Indie Makers que se esforçam todos os dias para criar os melhores serviços na Internet.'
-    ]
+      'Este site tem como objetivo promover a profissão Indie Maker, explicando ao público em geral. Apenas lendo estas poucas linhas, você já está prestando um grande serviço aos milhares de Indie Makers que se esforçam todos os dias para criar os melhores serviços na Internet.',
+    ],
   },
 
   roles: {
@@ -34,7 +34,7 @@ export default {
     smTitle: 'Mídias sociais',
     smContent: 'O Twitter é o mais usado, mas eles conseguem usar vários: Youtube, Reddit, Instagram...',
     seoTitle: 'SEO',
-    seoContent: 'Eles têm que fazer seus projetos se destacarem nos mecanismos de pesquisa!'
+    seoContent: 'Eles têm que fazer seus projetos se destacarem nos mecanismos de pesquisa!',
   },
 
   vocabulary: {
@@ -50,6 +50,10 @@ export default {
     mvp: 'MVP',
     mvpDef: 'Produto minimamente viável (Minimum Viable Product). A versão mais minimalista do seu produto.',
     kpi: 'KPI',
-    kpiDef: 'Indicador-Chave de Desempenho (Key Performance Indicator). Indicadores numéricos que permitem medir um desempenho. Ex: número de visitas diárias.'
-  }
+    kpiDef: 'Indicador-Chave de Desempenho (Key Performance Indicator). Indicadores numéricos que permitem medir um desempenho. Ex: número de visitas diárias.',
+  },
+
+  contributors: {
+    title: 'Contribuintes',
+  },
 }

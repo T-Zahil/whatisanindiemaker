@@ -22,16 +22,16 @@ export default {
       { hid: 'og-type', property: 'og:type', content: 'website' },
       { hid: 'og-description', property: 'og:description', content: 'You know an indie maker but you don\'t understand what they do? We explain it all to you!' },
       { hid: 'og-image', property: 'og:image', content: 'https://whatisanindiemaker.com/og.jpg' },
-      { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' }
+      { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' },
     ],
     link: [
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: 'https://whatisanindiemaker.com'
+        href: 'https://whatisanindiemaker.com',
       },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ],
   },
 
   css: [],
@@ -42,12 +42,13 @@ export default {
 
   buildModules: [
     '@nuxt/typescript-build',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
   ],
 
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '~/modules/contributors',
   ],
 
   i18n: {
@@ -55,19 +56,19 @@ export default {
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
-      messages
-    }
+      messages,
+    },
   },
 
   pwa: {
     icon: {
-      fileName: 'icon.png'
+      fileName: 'icon.png',
     },
     manifest: {
       lang: 'en',
-      name: 'What is an Indie Maker'
-    }
+      name: 'What is an Indie Maker',
+    },
   },
 
-  build: {}
+  build: {},
 }
