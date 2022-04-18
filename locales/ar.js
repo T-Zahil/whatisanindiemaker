@@ -3,7 +3,7 @@ export default {
 
   hero: {
     title: 'ما المقصود ب"الباني المستقل"؟',
-    subtitle: 'الباني المستقل {span}. يبنون مضارعهم بواردهم الخاصة، وفي غالب الأحيان، دون تمويل، مع اضطلاعهم بكل الجوانب: تطوير، تصميم، تسويق...',
+    subtitle: 'الباني المستقل {span} هو صانع مستقل، شخص يبني مشاريعه بموارده الخاصة، وفي غالب الأحيان دون تمويل، مع اضطلاعه بكل الجوانب: تطوير، تصميم، تسويق...',
     independantCreator: 'صانع مستقل',
   },
   
@@ -40,19 +40,18 @@ export default {
   vocabulary: {
     title: 'بعض المصطلحات',
     mrr: 'MRR / ARR',
-    mrrDef: 'Monthly / Annual Recurring Revenue. What an indie maker earns each month / year in recurring revenue.',
+    mrrDef: 'بالعربية: العائد الشهري / السنوي المتجدد. وهو ما يحصل عليه الباني المستقل كل شهر أو سنة كعائد متكرر.', 
     ramenProfitability: 'Ramen profitability',
-    ramenProfitabilityDef: 'Earning just enough to live on.',
+    ramenProfitabilityDef: 'تحصيل ما يكفي من دخل لضمان عيش أدنى',
     saas: 'SAAS',
-    saasDef: 'Software As A Service. An online software, often sold with a subscription. It allows to have recurring revenues.',
+    saasDef: 'البرمجيات كخدمة، وهو برنامج مقدم عبر الأنترنت، وغالبا ما يوفر مقابل اشتراك متجدد، ما يسمح لصاحبه بالحصول على دخل دوري.',
     churn: 'Churn',
-    churnDef: 'The number of people who unsubscribe from your project.',
+    churnDef: 'عدد الأشخاص الذين يلغون اشتراكهم في مشروع ما',
     mvp: 'MVP',
-    mvpDef: 'Minimum Viable Product. The most minimalist version of your product.',
+    mvpDef: 'أبسط نسخة من البرنامج بأقل المميزات والخصائص',
     kpi: 'KPI',
-    kpiDef: 'Key Performance Indicator. Numerical indicators that allow to measure a performance. Ex: number of daily visits.',
+    kpiDef: 'بالعربية: مؤشرات الأداء الرئيسية. وهي مؤشرات رقمية تسمح بقياس الأداء، مثل العدد اليومي للزوار.',
   },
-
   contributors: {
     title: 'المساهمون',
   },
