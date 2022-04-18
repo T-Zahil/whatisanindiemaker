@@ -2,11 +2,11 @@ export default {
   languageName: 'العربية',
 
   hero: {
-    title: 'What is an Indie Maker?',
-    subtitle: 'An indie maker is an {span}. They build projects with their own resources, often without funding, taking care of all aspects: development, design, marketing...',
+    title: 'ما المقصود ب"الباني المستقل"؟',
+    subtitle: 'الباني المستقل {span}. يبنون مضارعهم بواردهم الخاصة، وفي غالب الأحيان، دون تمويل، مع اضطلاعهم بكل الجوانب: تطوير، تصميم، تسويق...',
     independantCreator: 'صانع مستقل',
   },
-
+  
   msg: {
     title: '    إن أردت فهم هذه المهنة جيدا، استثمر 5 دقائق في قراءة ما يلي',
   },
@@ -22,23 +22,23 @@ export default {
   },
 
   roles: {
-    title: 'What does an indie maker do?',
-    developmentTitle: 'Development',
+    title: 'ما الذي يفعله الباني المستقل؟',
+    developmentTitle: 'التطوير',
     developmentContent: 'Without necessarily being an expert in development, an indie maker very often develop their own projects.',
-    designTitle: 'Design',
+    designTitle: 'التصميم',
     designContent: 'Without necessarily being an expert in design, an indie maker very often design their own projects.',
-    marketingTitle: 'Marketing',
-    marketingContent: 'Marketing is a very important part of their work: to sell your projects, they have to make them known!',
-    himselfTitle: 'Do everything themselves',
+    marketingTitle: 'التسويق',
+    marketingContent: 'التسويق جزء منهم من عملهم: لبيع مشاريعهم يحتاجون إلى إشهارها',
+    himselfTitle: 'يفعلون كل شيء بأنفسهم',
     himselfContent: 'An indie maker can very well use no-code tools, CMS, templates... The more time they saves the better.',
-    smTitle: 'Social media',
-    smContent: 'Twitter is the best known, but they can use all of them: youtube, reddit, instagram...',
-    seoTitle: 'SEO',
-    seoContent: 'They have to make their projects stand out on search engines themselves!',
+    smTitle: 'الإعلام الاجتماعي',
+    smContent: 'تويتر أفضل منصة معروفة، لكن يمكنهم استخدام أخريات: يوتيوب، ريديت، أنستغرام...',
+    seoTitle: 'التهيئة لمحركات البحث',
+    seoContent: 'عليهم إبراز مشاريعهم ضمن نتائج البحث بأنفسهم',
   },
 
   vocabulary: {
-    title: 'Some vocabulary',
+    title: 'بعض المصطلحات',
     mrr: 'MRR / ARR',
     mrrDef: 'Monthly / Annual Recurring Revenue. What an indie maker earns each month / year in recurring revenue.',
     ramenProfitability: 'Ramen profitability',
@@ -54,6 +54,6 @@ export default {
   },
 
   contributors: {
-    title: 'Contributors',
+    title: 'المساهمون',
   },
 }
