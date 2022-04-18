@@ -28,7 +28,7 @@ export default {
     designTitle: 'Design',
     designContent: 'Without necessarily being an expert in design, an indie maker very often design their own projects.',
     marketingTitle: 'Marketing',
-    marketingContent: 'Marketing is a very important part of their work: to sell your projects, they have to make them known!',
+    marketingContent: 'Marketing is a very important part of their work: to sell their projects, they have to make them known!',
     himselfTitle: 'Do everything themselves',
     himselfContent: 'An indie maker can very well use no-code tools, CMS, templates... The more time they saves the better.',
     smTitle: 'Social media',
