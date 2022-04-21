@@ -412,7 +412,7 @@ export default Vue.extend({
   data () {
     return {
       contributors: contributors.filter(
-        contributor => contributor.type !== 'Bot',
+        (contributor: { type: string }) => contributor.type !== 'Bot',
       ),
     }
   },

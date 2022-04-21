@@ -15,17 +15,19 @@ async function getContributors () {
 
 module.exports = function beforeBuild () {
   this.nuxt.hook('build:before', async () => {
-    fs.emptyDir('static/data')
+    if (process.env.GITHUB_TOKEN) {
+      fs.emptyDir('static/data')
 
-    const contributors = await getContributors()
-    const path = 'static/data/contributors.json'
+      const contributors = await getContributors()
+      const path = 'static/data/contributors.json'
 
-    try {
-      fs.ensureFileSync(path)
-      fs.writeJson(path, contributors.data)
-    } catch (e) {
-      // eslint-disable-next-line no-console
-      console.error(`${path} Write Failed. ${e}`)
+      try {
+        fs.ensureFileSync(path)
+        fs.writeJson(path, contributors.data)
+      } catch (e) {
+        // eslint-disable-next-line no-console
+        console.error(`${path} Write Failed. ${e}`)
+      }
     }
   })
 }
