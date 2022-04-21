@@ -11,6 +11,11 @@ Install dependencies:
 $ yarn
 ```
 
+Set your [GitHub Personal Access Token](https://github.com/settings/tokens) as an environment variable:
+```bash
+$ export GITHUB_TOKEN=<your-token>
+```
+
 Run the server:
 ```bash
 $ yarn dev
@@ -26,5 +31,5 @@ Contributions are always welcome!
 - Create a new file `[YOUR_LANGUAGE].js` in the `locales` folder.
 - In it, copy and paste the contents of the file the language from which you want to translate, for example `en.js`.
 - Translate it 😄🙏
-- Add your language key in `locales/index.js`. It must be the exact same key you used to name your file `[YOUR_LANGUAGE].js`
+- Add your language key in `locales/index.js` and to the `i18n.locales` object in `nuxt.config.js`. It must be the exact same key you used to name your file `[YOUR_LANGUAGE].js`
 - Submit a PR 🔥
