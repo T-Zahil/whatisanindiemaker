@@ -16,6 +16,6 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'DefaultLayout'
+  name: 'DefaultLayout',
 })
 </script>
