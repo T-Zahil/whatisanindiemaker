@@ -28,18 +28,18 @@ export default Vue.extend({
   props: {
     editionMode: {
       type: Boolean,
-      default: true
+      default: true,
     },
     value: String,
     label: String,
     options: Array,
     optionsLabel: String,
-    required: Boolean
+    required: Boolean,
   },
 
   data () {
     return {
-      selected: this.value
+      selected: this.value,
     }
   },
 
@@ -51,20 +51,24 @@ export default Vue.extend({
       set (value: any) {
         this.selected = value
         this.$emit('input', value)
-      }
-    }
+      },
+    },
   },
 
   watch: {
     value (value: any) {
       this.selected = value
-    }
+    },
   },
 
   methods: {
     displayOption (option: Record<string, any>) {
-      return option ? (this.optionsLabel ? option[this.optionsLabel] : option) : ''
-    }
-  }
+      if (option) {
+        return this.optionsLabel ? option[this.optionsLabel] : option
+      }
+
+      return ''
+    },
+  },
 })
 </script>
