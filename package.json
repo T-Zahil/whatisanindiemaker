@@ -41,7 +41,7 @@
     "fs-extra": "^10.1.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.4.1",
-    "postcss": "^8.4.12",
+    "postcss": "^8.4.13",
     "typescript-eslint": "^0.0.1-alpha.0"
   }
 }
