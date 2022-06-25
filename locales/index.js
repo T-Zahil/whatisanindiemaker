@@ -1,1 +1,1 @@
-export default ['de', 'en', 'fr', 'ru', 'pt-br', 'ara']
+export default ['de', 'en', 'fr', 'it', 'ru', 'pt-br', 'ara']
