@@ -16,7 +16,7 @@
     "*.{js,ts,vue}": "eslint --cache"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^7.2.2",
+    "@nuxtjs/i18n": "^7.3.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@splitbee/web": "^0.3.0",
     "core-js": "^3.24.0",
