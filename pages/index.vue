@@ -326,7 +326,7 @@
       >
         {{ $t('vocabulary.title') }}
       </h3>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
         <div class="flex flex-col col-span-1 p-10 text-xl text-yellow-200 bg-gray-800 rounded-lg">
           <h4 class="font-bold underline">
             {{ $t('vocabulary.mrr') }}
