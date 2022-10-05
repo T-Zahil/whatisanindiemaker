@@ -33,7 +33,7 @@
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "@nuxtjs/eslint-module": "^3.1.0",
     "@nuxtjs/tailwindcss": "^5.3.3",
-    "axios": "^0.27.2",
+    "axios": "^1.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.24.0",
     "eslint-plugin-nuxt": "^4.0.0",
