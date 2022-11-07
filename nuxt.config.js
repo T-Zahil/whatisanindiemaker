@@ -52,7 +52,7 @@ export default {
   ],
 
   i18n: {
-    locales: ['be', 'de', 'en', 'fr', 'it', 'ru', 'pt-br', 'ara', 'sp', 'tr'],
+    locales: ['be', 'be-latn', 'de', 'en', 'fr', 'it', 'ru', 'pt-br', 'ara', 'sp', 'tr'],
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
