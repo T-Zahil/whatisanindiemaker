@@ -16,7 +16,7 @@ export default {
     content: [
       'É uma profissão nova que muita gente ainda não conhece. Muitos Indie Makers trabalham como freelance, o que pode levá-los a se sentirem isolados, sensação essa que se agrava quando as pessoas ao redor não entendem o que você faz.',
       'Além de trabalhar em um ambiente relativamente novo e técnico (Internet!!), os Indie Makers têm vários empregos ao mesmo tempo: desenvolvedor, designer, marketing, redator, gerente de mídia social...',
-      'E o mais difícil pra alguns parentes é entender que muitos deles não ganham a vida assim! E os ditos "sortudos" já passaram meses ou anos aprendendo e construindo projetos.',
+      'E o mais difícil para alguns parentes é entender que muitos deles não ganham a vida assim! E os ditos "sortudos" já passaram meses ou anos aprendendo e construindo projetos.',
       'Este site tem como objetivo promover a profissão Indie Maker, explicando ao público em geral. Apenas lendo estas poucas linhas, você já está prestando um grande serviço aos milhares de Indie Makers que se esforçam todos os dias para criar os melhores serviços na Internet.',
     ],
   },
