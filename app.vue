@@ -11,8 +11,7 @@
           </svg>
         </a>
 
-        <!-- <base-select :value="currentLocale" :options="availableLocales" options-label="name"
-          @input="$i18n.setLocale($event)" /> -->
+        <USelect v-model="locale" :options="availableLocales" icon="i-heroicons-language" />
 
         <a href="https://www.buymeacoffee.com/tzahil" rel="noopener" target="_none"
           class="flex items-center px-4 py-2 space-x-3 text-amber-800 rounded-lg bg-[#fdde02]">
@@ -270,33 +269,30 @@
       </section>
       <!-- End Contributors -->
 
-      <a target="_blank" rel="noopener" href="https://thomas-sanlis.com/"
-        class="fixed bottom-0 right-0 z-50 flex items-center p-2 text-sm bg-white rounded-t-md">
-        <img src="https://thomas-sanlis.com/icon.png" class="w-6 mr-4">
-        <p>by Thomas Sanlis</p>
-      </a>
+      <NuxtLink target="_blank" href="https://uneed.best/"
+        class="fixed bottom-0 right-0 z-50 flex items-center p-2 text-sm bg-white rounded-tl-md">
+        <svg class="w-6" width="56" height="36" viewBox="0 0 56 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M54.9608 14.0252L27.6664 0.258326C26.4774 -0.341231 25.0288 0.138364 24.4306 1.32952C24.2837 1.62194 24.1975 1.94123 24.1778 2.268L23.1585 19.0021C23.089 20.142 22.2322 21.0772 21.1045 21.2437L1.28638 24.1709C0.463411 24.2925 -0.105143 25.0594 0.0163544 25.884C0.104622 26.4845 0.543358 26.9735 1.13008 27.1251L32.0169 35.1104C33.3051 35.4436 34.6193 34.6668 34.9521 33.3756C35.0009 33.1845 35.0269 32.9881 35.0284 32.7908L35.1312 19.2359C35.1411 17.9071 36.2206 16.8363 37.5467 16.8397L54.2801 16.8823C55.1119 16.8844 55.7879 16.2104 55.79 15.377C55.791 14.8054 55.4701 14.2822 54.9608 14.0252Z"
+            fill="#F8BA74"></path>
+        </svg>
+        <p class="ml-2">A website by Uneed</p>
+      </NuxtLink>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import contributors from '~/static/data/contributors.json'
+const { data: contributors } = useFetch('https://api.github.com/repos/t-zahil/whatisanindiemaker/contributors', {
+  headers: {
+    Authorization: `token ${process.env.GITHUB_TOKEN}`,
+  },
+})
 
-const { locale } = useI18n()
+const { locale, locales, setLocale } = useI18n()
 
-// const filteredContributors = contributors.filter((contributor: { type: string }) => contributor.type !== 'Bot')
-
-const availableLocales = computed<Record<string, any>>(() => {
-  const locales = [] as Record<string, any>
-
-  this.$i18n.locales.forEach((lang: any) => {
-    locales.push({
-      value: lang,
-      name: require(`~/locales/${lang}`).default.languageName,
-    })
-  })
-
-  return locales
+const availableLocales = computed(() => {
+  return (locales.value).filter(i => i.code !== locale.value)
 })
 
 </script>
