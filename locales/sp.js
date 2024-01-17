@@ -3,8 +3,7 @@ export default {
 
   hero: {
     title: '¿Qué es un Creador Independiente?',
-    subtitle: 'Un Creador Independiente es exactamente eso un {span}. They build projects with their own resources, often without funding, taking care of all aspects: development, design, marketing...',
-    independantCreator: 'creador independiente',
+    subtitle: 'Un Creador Independiente es exactamente eso un creador independiente. They build projects with their own resources, often without funding, taking care of all aspects: development, design, marketing...',
   },
 
   msg: {

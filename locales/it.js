@@ -3,8 +3,7 @@ export default {
 
   hero: {
     title: "Cos'è un Indie Maker?",
-    subtitle: 'Un indie maker è un {span}. Costruisce progetti con le proprie risorse, spesso senza finanziamenti, occupandosi di tutti gli aspetti: sviluppo, design, marketing...',
-    independantCreator: 'creatore independente',
+    subtitle: 'Un indie maker è un creatore independente. Costruisce progetti con le proprie risorse, spesso senza finanziamenti, occupandosi di tutti gli aspetti: sviluppo, design, marketing...',
   },
 
   msg: {

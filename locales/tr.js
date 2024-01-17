@@ -4,8 +4,7 @@ export default {
   hero: {
     title: 'Indie Maker Nedir?',
     subtitle:
-      'Bir indie maker {span}. Kendi kaynaklarıyla, çoğu zaman finansman olmadan, tüm yönleriyle ilgilenerek projeler inşa eder: geliştirme, tasarım, pazarlama...',
-    independantCreator: 'bağımsız bir yaratıcıdır',
+      'Bir indie maker bağımsız bir yaratıcıdır. Kendi kaynaklarıyla, çoğu zaman finansman olmadan, tüm yönleriyle ilgilenerek projeler inşa eder: geliştirme, tasarım, pazarlama...',
   },
 
   msg: {

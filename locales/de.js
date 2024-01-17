@@ -4,8 +4,7 @@ export default {
   hero: {
     title: 'Was ist ein Indie Maker?',
     subtitle:
-      'Indie Maker sind {span}. Sie bauen Projekte mit ihren eigenen Mitteln, oft ohne Finanzierung. Sie kümmern sich um alle Aspekte: Entwicklung, Design, Marketing...',
-    independantCreator: 'unabhängige Schöpfer',
+      'Indie Maker sind unabhängige Schöpfer. Sie bauen Projekte mit ihren eigenen Mitteln, oft ohne Finanzierung. Sie kümmern sich um alle Aspekte: Entwicklung, Design, Marketing...',
   },
 
   msg: {
