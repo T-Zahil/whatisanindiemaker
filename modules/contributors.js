@@ -1,21 +1,21 @@
-import axios from 'axios'
+import { defineNuxtModule } from '@nuxt/kit'
 
 const fs = require('fs-extra')
 
-async function getContributors () {
-  return await axios.get(
+async function getContributors() {
+  return await fetch(
     'https://api.github.com/repos/t-zahil/whatisanindiemaker/contributors',
     {
       headers: {
-        Authorization: `token ${process.env.GITHUB_TOKEN}`,
+        Authorization: `token ${process.env.githubToken}`,
       },
     },
   )
 }
 
-module.exports = function beforeBuild () {
-  this.nuxt.hook('build:before', async () => {
-    if (process.env.GITHUB_TOKEN) {
+export default defineNuxtModule((options, nuxt) => {
+  nuxt.hook('build:before', async () => {
+    if (process.env.githubToken) {
       fs.emptyDir('static/data')
 
       const contributors = await getContributors()
@@ -30,4 +30,4 @@ module.exports = function beforeBuild () {
       }
     }
   })
-}
+})
