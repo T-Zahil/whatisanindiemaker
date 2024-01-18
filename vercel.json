@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    {
+      "source": "/js/script.js",
+      "destination": "https://analytics.uneed.best/js/script.js"
+    },
+    {
+      "source": "/api/event",
+      "destination": "https://analytics.uneed.best/api/event"
+    }
+  ],
+  "trailingSlash": false
+}
