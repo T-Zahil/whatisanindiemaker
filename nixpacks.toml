@@ -1,0 +1,4 @@
+providers = ["node"]
+
+[phases.setup]
+nixPkgs = ['nodejs']

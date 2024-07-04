@@ -5,10 +5,6 @@ export default defineNuxtConfig({
     githubToken: '',
   },
 
-  nitro: {
-    static: true
-  },
-
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/ui',
