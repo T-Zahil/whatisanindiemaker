@@ -18,6 +18,6 @@
   "dependencies": {
     "@nuxt/ui": "^2.12.0",
     "@nuxtjs/i18n": "^8.0.0",
-    "@nuxtjs/plausible": "^1.0.0"
+    "@nuxtjs/plausible": "^1.0.3"
   }
 }
